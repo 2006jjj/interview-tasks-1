@@ -1,1 +1,2 @@
-# interview-tasks-1
+# Решение заданий для собеседования 
+Interview tasks solution
