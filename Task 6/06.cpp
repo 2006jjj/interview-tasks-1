@@ -81,17 +81,17 @@ for (int i = 0; i < A; i++)
   for (int j = 0; j < B; j++)
   {
     pixels[i][j] = '.';
-    cout << pixels[i][j] << ' ';
+    //cout << pixels[i][j] << ' ';
   }
   cout << endl;
 }
 
-for (int i = 0; i < A; i++)
+/*for (int i = 0; i < A; i++)
 {
   for (int j = 0; j < B; j++)
     cout << pixels[i][j] << ' ';
   cout << endl;
-}
+}*/
 
 for (int i = 0; i < numbers_of_strings; i++)
 {
@@ -105,9 +105,9 @@ for (int i = 0; i < numbers_of_strings; i++)
   str1.erase(x1, x2 + 1);
 }
 
-cout << "str3=" << endl;
+/*cout << "str3=" << endl;
 for (int i = 0; i < 6; i++)
-  cout << str3[i];
+  cout << str3[i];*/
 
 for (int i = 0; i < numbers_of_strings; i++)
 {
@@ -122,10 +122,9 @@ for (int i = 0; i < numbers_of_strings; i++)
   if (stringsize == 10 || stringsize == 11)
   {
     //RECT 1x1
-    int r1 = q1, r2 = q2;
-    for (int i = 0; i < r2; i++)
+    for (int i = 0; i < q2; i++)
     {
-      for (int j = 0; j < r1; j++)
+      for (int j = 0; j < q1; j++)
         pixels[i][j] = '#';
     }
     
@@ -207,17 +206,16 @@ for (int i = 0; i < numbers_of_strings; i++)
   }
 }
  
-int nnn = 0;
+int ans = 0;
 for (int i = 0; i < A; i++)
 {
   for (int j = 0; j < B; j++)
   {
     if (pixels[i][j] == "#")
-      nnn++;
+      ans++;
   }
-  cout << endl;
 }
- cout << "\nnnn=" << nnn << endl;
+ cout << "\nОтвет:" << ans << endl;
 
 cout << endl; system("pause"); return 0;
 }
